@@ -1,0 +1,23 @@
+
+
+
+@import url("https://unpkg.com/@phosphor-icons/web");
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+
+
+@import "swiper/css/bundle";     
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "react-modal-video/css/modal-video.css";  
+
+
+@import url("../public/assets/css/animate.css"); 
+@import url("../public/assets/icons/fontawesome/css/all.css");
+@import url("../public/assets/css/meanmenu.css"); 
+@import url("../public/assets/css/niceselect.css"); 
+@import url("../public/assets/css/scroll-up.css"); 
+@import url("../public/assets/css/style.css");
+@import url("../public/assets/css/responsive.css");
+
