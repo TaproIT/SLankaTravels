@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import { authRouter } from "./src/routes/authRouter.js";
+import { connectDB } from "./src/config/db_config.js";
 
 
 dotenv.config();
@@ -22,9 +24,15 @@ app.use(
     })
 );
 
+connectDB();
+
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send('Api is working')
 });
+
+app.use('/api/v1/auth', authRouter);
 
 //DATABASE CONNECTION
 // mongoose.set('strictQuery', false);
