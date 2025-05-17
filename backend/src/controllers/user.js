@@ -75,6 +75,7 @@ export const registerUser  =  async (req,res) => {
 
         return sendSuccessResponse(
             res,
+            200,
             "User registered successfully",
             {
                 user: userWithoutRefreshToken,
@@ -84,11 +85,14 @@ export const registerUser  =  async (req,res) => {
 
 
     }catch (error) {
-        res.status(500).json({
-            success: false,
-            message: "Internal server error",
-            error: error.message,
-        });
+       
+        return sendErrorResponse(
+            res, 
+            500, 
+            "Internal Server Error", 
+            error
+        );
+
     }
     
 
